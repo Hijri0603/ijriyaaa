@@ -1,0 +1,280 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #3e2723, #000000); /* Gradasi coklat ke hitam untuk latar belakang */
+    color: #d7ccc8; /* Teks putih agar kontras dengan latar belakang */
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #3e2723, #000000, #d7ccc8); /* Gradasi coklat ke hitam ke putih */
+    color: #d7ccc8;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em; /* Menambah ukuran logo */
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 25px; /* Jarak antar menu */
+}
+
+header nav ul li a {
+    color: #d7ccc8;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    background-color: #000000;
+    color: #d7ccc8;
+    transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(62, 39, 35, 0.7)), url('bg.jpg') no-repeat center center/cover; /* Gradasi hitam dan coklat pada background */
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+    background-size: cover;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+    font-size: 4em; /* Memperbesar ukuran teks judul */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .additional-text {
+    font-size: 1.8em;
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Tombol Beli Sekarang */
+.btn {
+    display: inline-block;
+    background-color: #5d4037; /* Coklat untuk tombol */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.4em;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: #4e342e; /* Coklat lebih gelap saat hover */
+    transform: translateY(-5px);
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background: #3e2723;
+    text-align: center;
+    color: #d7ccc8;
+}
+
+.about h2 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/*Menu Section*/
+.menu {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #f5f5f5, #d7ccc8);
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3.2em;
+    color: #3e2723;
+    font-weight: 700;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.menu-item {
+    text-align: center;
+    background: #000000;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item-img {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item-img:hover {
+    transform: scale(1.1);
+}
+
+.menu-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    margin-top: 15px;
+    font-size: 1.6em;
+    color: #3e2723;
+}
+
+.menu-description {
+    font-size: 1.2em;
+    color: #5d4037;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.menu-price {
+    font-size: 1.5em;
+    color: #ff7043;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #f9f9f9, #d7ccc8);
+    color: #333;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    color: #3e2723;
+    font-weight: 700;
+}
+
+.contact p {
+    font-size: 1.3em;
+    color: #5d4037;
+    margin-bottom: 40px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Laptop (1366px and smaller) */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+    .menu-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet (758px and smaller) */
+@media (max-width: 758px) {
+    html {
+        font-size: 62.5%;
+    }
+    header .logo h1 {
+        font-size: 2.5em;
+    }
+    .hero h2 {
+        font-size: 3.5em;
+    }
+    .menu h2 {
+        font-size: 2.8em;
+    }
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+    .menu-item h3 {
+        font-size: 1.4em;
+    }
+    .contact h2 {
+        font-size: 2.5em;
+    }
+}
+
+/* Phone (480px and smaller) */
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+    header .logo h1 {
+        font-size: 2em;
+    }
+    .hero h2 {
+        font-size: 3em;
+    }
+    .menu h2 {
+        font-size: 2.2em;
+    }
+    .menu-items {
+        grid-template-columns: 1fr; /* 1 item per row */
+    }
+    .menu-item h3 {
+        font-size: 1.2em;
+    }
+    .contact h2 {
+        font-size: 2.2em;
+    }
+}
